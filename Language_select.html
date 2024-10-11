@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Language</title>
+    <style>
+        /* Reset some default styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #2b392f;
+            color: #e6ddb4;
+            height: 100%;
+        }
+
+        /* Container for the entire page */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            padding: 0 20px;
+        }
+
+        /* Language selection buttons */
+        .language-buttons {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .language-buttons button {
+            background-color: #86b56c;
+            color: #2b392f;
+            border: none;
+            border-radius: 25px;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .language-buttons button:hover {
+            background-color: #729d5a;
+        }
+        .lang{
+            color: white;
+            font-size: 35px;
+        }
+        .logo{
+            margin-bottom: 20px;
+        }
+
+        /* Make the page responsive */
+        @media (max-width: 480px) {
+            .circle {
+                width: 120px;
+                height: 120px;
+            }
+
+            .language-buttons button {
+                padding: 12px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Logo.jpg" height="200px" width="200px" class="logo">
+        <div class="lang">SELECT LANGUAGE</div>
+        <div class="language-buttons">
+            <button onclick="location.href='LoginOTP.html'">English</button>
+            <button>हिन्दी</button>
+            <button>தமிழ்</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Orders</title>
+    <link rel="stylesheet" href="order_Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button id="back-button">
+                back
+            </button>
+            <h2>Current Orders</h2>
+            <button id="home-button">
+                Home
+            </button>
+        </div>
+
+        <div class="button-group">
+            <button>Sort by</button>
+        </div>
+
+        <div class="order-card">
+            <div class="order-info">
+                <button>i</button>
+                <div class="order-details">
+                    <div>Order ID: 11402-02-98</div>
+                    <div>603203, TN</div>
+                </div>
+            </div>
+            <div class="order-actions">
+                <button class="accept">Accept</button>
+                <button class="reject">Reject</button>
+            </div>
+        </div>
+
+        <div class="order-card">
+            <div class="order-info">
+                <button>i</button>
+                <div class="order-details">
+                    <div>Order ID: 11402-04-93</div>
+                    <div>110019, ND</div>
+                </div>
+            </div>
+            <div class="order-actions">
+                <button class="accept">Accept</button>
+                <button class="reject">Reject</button>
+            </div>
+        </div>
+
+        <div class="order-card">
+            <div class="order-info">
+                <button>i</button>
+                <div class="order-details">
+                    <div>Order ID: 11402-07-98</div>
+                    <div>603203, TN</div>
+                </div>
+            </div>
+            <div class="order-actions">
+                <button class="accept">Accept</button>
+                <button class="reject">Reject</button>
+            </div>
+        </div>
+
+        <div class="order-card">
+            <div class="order-info">
+                <button>i</button>
+                <div class="order-details">
+                    <div>Order ID: 11402-08-98</div>
+                    <div>603203, TN</div>
+                </div>
+            </div>
+            <div class="order-actions">
+                <button class="accept">Accept</button>
+                <button class="reject">Reject</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById('back-button').addEventListener('click', function() {
+            window.location.href='F_harvestdetails.html'; // Goes back to the previous page
+        });
+
+        document.getElementById('home-button').addEventListener('click', function() {
+            window.location.href = 'F_homepage.html'; // Redirects to home page, replace 'home.html' with the correct path
+        });
+    </script>
+</body>
+</html>

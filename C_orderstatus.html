@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="orderstatus_Style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Order Confirmation</h1>
+        </header>
+
+        <div class="order-details">
+            <h2>Thank you for your order!</h2>
+            <p>Your order number is: <strong>#123456</strong></p>
+            <p>Estimated Delivery: <strong>3-5 hours</strong></p>
+        </div>
+
+        <div class="order-status">
+            <h2>Order Status</h2>
+            <p id="status-text" class="status-text">Order in progress</p>
+        </div>
+
+        <div class="back-to-home">
+            <button onclick="location.href='C_productslist.html'">Back to Home</button>
+        </div>
+    </div>
+
+    <script src="orderstatus_Script.js"></script>
+</body>
+</html>

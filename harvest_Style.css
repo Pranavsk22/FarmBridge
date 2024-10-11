@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #243F1F;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 360px; /* Match typical mobile width */
+    height: 940px; /* Match typical mobile height */
+    background-color: #243F1F;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.icon-button img {
+    width: 25px;
+    height: 25px;
+    transition: opacity 0.3s;
+}
+
+.icon-button:hover img {
+    opacity: 0.8;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    color: #FFF;
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.rice-image, .wheat-image {
+    width: 100%;
+    height: 130px; /* Adjusted height */
+    background-size: cover;
+    background-position: center; /* Properly centered */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="date"], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #2F4F2F;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #333;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #2F4F2F;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FFDD44;
+    color: #2F4F2F;
+}
+
+select {
+    background-size: 15px;
+    padding-right: 30px; /* Space for arrow */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.w-i,.r-i{
+    size: 100px;
+    align-items: center;
+}

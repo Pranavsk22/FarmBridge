@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produce List</title>
+    <link rel="stylesheet" href="productslist_Style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Products List</h1>
+            <div class="search-and-icons">
+                <input type="text" placeholder="Search here..." class="search-bar">
+                <div class="icons">
+                    <i class="fa fa-search"></i>
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        
+        <div class="produce-list">
+            <div class="produce-item" data-price="100">
+                <img src="rice.jpg" alt="Rice">
+                <h2>Rice</h2>
+                <div class="quantity-controls">
+                    <button class="minus-btn">-</button>
+                    <input type="text" value="0" class="quantity-input" readonly>
+                    <button class="plus-btn">+</button>
+                </div>
+                <p class="price">₹0</p>
+            </div>
+            <div class="produce-item" data-price="200">
+                <img src="wheat.jpg" alt="Wheat">
+                <h2>Wheat</h2>
+                <div class="quantity-controls">
+                    <button class="minus-btn">-</button>
+                    <input type="text" value="0" class="quantity-input" readonly>
+                    <button class="plus-btn">+</button>
+                </div>
+                <p class="price">₹0</p>
+            </div>
+        </div>
+        <div class="add-to-cart">
+            <button class="cart" onclick="location.href='C_cart.html'">View Cart</button>
+
+        </div>
+    </div>
+
+    <script src="productslist_Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #254222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 360px; /* Set width to match typical mobile dimensions */
+    height: 640px; /* Set height to match typical mobile dimensions */
+    background-color: #254222;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header button img {
+    width: 25px;
+    height: 25px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    color: #FFF;
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.button-group button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #99cc66;
+    color: #254222;
+    font-size: 14px;
+    cursor: pointer;
+    flex: 1;
+    margin-right: 5px;
+}
+
+.button-group button:last-child {
+    background-color: #254222;
+    color: #99cc66;
+    margin-right: 0;
+}
+
+.order-card {
+    background-color: #99cc66;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.order-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.order-info button {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background-color: #254222;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.order-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.order-actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.order-actions button.accept {
+    background-color: #254222;
+    color: #99cc66;
+}
+
+.order-actions button.reject {
+    background-color: red;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .header img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .button-group button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .order-info button {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    .order-actions button {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
